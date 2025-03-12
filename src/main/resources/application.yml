@@ -1,0 +1,27 @@
+server:
+  port: 8080
+  
+spring:
+  application:
+    name: crypto-service
+
+management:
+  context-path: /internal-management
+
+security:
+  user:
+    name: cryptoserviceauthuser
+    password: cuXC=4!Kj2KD@3VT
+
+# Here begins the crypto-service specific properties.
+
+aws:
+  credentials:
+    access-key:
+    secret-key:
+  kms:
+    service-endpoint:
+    signing-region:
+    cmk-id:
+    data-key-algorithm: AES
+    data-key-spec: AES_128
